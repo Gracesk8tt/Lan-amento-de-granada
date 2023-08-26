@@ -1,0 +1,17 @@
+function solucao(gabarito) {
+    const distancias = [1, 2, 3, 4]; 
+    let pontuacaoTotal = 0;
+
+    for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 4; j++) {
+        
+            const posicaoGabarito = i * 4 + j;
+            
+            if (gabarito[posicaoGabarito]) {
+                pontuacaoTotal += distancias[i];
+            }
+        }
+    }
+
+    console.log (pontuacaoTotal);
+}
